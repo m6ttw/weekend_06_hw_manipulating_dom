@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const form = document.querySelector("#new-movie-form");
-	form.addEventListener("submit", handleFormSubmit);
+	const newMovieForm = document.querySelector("#new-movie-form");
+	newMovieForm.addEventListener("submit", handleFormSubmit);
 
 	const deleteAllButton = document.querySelector("#delete-all");
 	deleteAllButton.addEventListener("click", handleDeleteAllClick);
