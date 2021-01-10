@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	newMovieForm.addEventListener("submit", handleFormSubmit);
 
 	const deleteAllButton = document.querySelector("#delete-all");
-	deleteAllButton.addEventListener("click", handleDeleteAllClick);
+	deleteAllButton.addEventListener("click", handleClickDeleteAll);
 });
 
 const handleFormSubmit = function (event) {
@@ -40,7 +40,7 @@ const createMovieListItem = function (form) {
     return MovieListItem;
 };
 
-const handleDeleteAllClick = function (event) {
+const handleClickDeleteAll = function (event) {
 	const movieList = document.querySelector("#movie-list");
 	movieList.innerHTML = "";
 }
